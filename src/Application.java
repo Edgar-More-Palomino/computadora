@@ -1,13 +1,6 @@
 
 public class Application {
 
-	private static Teclado construirTeclado() {
-		Teclado teclado = new Teclado();
-		teclado.setColor("Azul");
-		teclado.setModelo("Gamer");
-		return teclado;
-	}
-
 	public static void main(String[] args) {
 	
 		Computadora computadora = new Computadora();
@@ -22,5 +15,12 @@ public class Application {
 		
 		System.out.println(computadora);
 	}
-	
+
+	private static Teclado construirTeclado() {
+		Teclado teclado = new Teclado();
+		teclado.setColor("Azul");
+		teclado.setModelo("Gamer");
+		return teclado;
+	}
+
 }
