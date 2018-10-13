@@ -5,12 +5,7 @@ public class Application {
 
 		Computadora computadora = new Computadora();
 
-		Mouse mouse = new Mouse();
-		mouse.setColor("Negro");
-		mouse.setTipo("Inalambrico");
-		mouse.setModelo("125");
-
-		computadora.setMouse(mouse);
+		computadora.setMouse(construirMouse());
 		computadora.setTeclado(construirTeclado());
 		computadora.setCpu(construirCpu());
 		computadora.setPantalla(construirPantalla());
@@ -25,6 +20,15 @@ public class Application {
 		return teclado;
 	}
 
+	private static Mouse construirMouse() {
+		Mouse mouse = new Mouse();
+		mouse.setColor("negro");
+		mouse.setModelo("125");
+		mouse.setTipo("Inalambrico");
+		return mouse;
+
+	}
+
 	private static Cpu construirCpu() {
 		Cpu cpu = new Cpu();
 		cpu.setColor("rojo");
@@ -33,12 +37,13 @@ public class Application {
 		return cpu;
 
 	}
+
 	private static Pantalla construirPantalla() {
 		Pantalla pantalla = new Pantalla();
 		pantalla.setColor("verde");
 		pantalla.setMarca("lg");
 		pantalla.setModelo("plana");
 		return pantalla;
-		
+
 	}
 }
