@@ -1,6 +1,8 @@
 // 
 public class Mouse {
 	private String color;
+	private String modelo;
+	private String tipo;
 
 	public String getColor() {
 		return color;
@@ -9,7 +11,6 @@ public class Mouse {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	private String modelo;
 
 	public String getModelo() {
 		return modelo;
@@ -18,7 +19,6 @@ public class Mouse {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	private String tipo;
 
 	public String getTipo() {
 		return tipo;
@@ -32,5 +32,5 @@ public class Mouse {
 	public String toString() {
 		return "Mouse [color=" + color + ", modelo=" + modelo + ", tipo=" + tipo + "]";
 	}
-	
+
 }

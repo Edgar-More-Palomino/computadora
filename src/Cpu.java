@@ -1,5 +1,5 @@
 
-public class Pantalla {
+public class Cpu {
 	private String color;
 	private String marca;
 	private String modelo;
@@ -12,14 +12,6 @@ public class Pantalla {
 		this.color = color;
 	}
 
-	public String getMarca() {
-		return marca;
-	}
-
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
 	public String getModelo() {
 		return modelo;
 	}
@@ -28,9 +20,17 @@ public class Pantalla {
 		this.modelo = modelo;
 	}
 
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
 	@Override
 	public String toString() {
-		return "Pantalla [color=" + color + ", marca=" + marca + ", modelo=" + modelo + "]";
+		return "Cpu [color=" + color + ", marca=" + marca + ", modelo=" + modelo + "]";
 	}
-	
+
 }

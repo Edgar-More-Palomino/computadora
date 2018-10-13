@@ -1,12 +1,21 @@
 
 public class Computadora {
 
-	//campos
+	// campos
 	private Mouse mouse;
 	private Teclado teclado;
 	private Pantalla pantalla;
+	private Cpu cpu;
 
-	//metodos
+	// metodos
+	public Cpu getCpu() {
+		return cpu;
+	}
+
+	public void setCpu(Cpu cpu) {
+		this.cpu = cpu;
+	}
+
 	public Mouse getMouse() {
 		return mouse;
 	}
@@ -33,8 +42,7 @@ public class Computadora {
 
 	@Override
 	public String toString() {
-		return "Computadora [mouse=" + mouse + ", teclado=" + teclado + ", pantalla=" + pantalla + "]";
+		return "Computadora [mouse=" + mouse + ", teclado=" + teclado + ", pantalla=" + pantalla + ", cpu=" + cpu + "]";
 	}
 
-	
 }
